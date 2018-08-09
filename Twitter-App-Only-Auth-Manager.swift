@@ -15,7 +15,7 @@ class TwitterAPIManager: NSObject {
     static var shared = TwitterAPIManager()
     let kConsumerKey = "Global.twitter_kConsumerKey"
     let kConsumerSecretKey = "Global.twitter_kConsumerSecretKey"
-    let kTwitterAuthAPI = "Global.twitter_kTwitterAuthAPI"
+    let kTwitterAuthAPI = "https://api.twitter.com/oauth2/token"
     let twitterGrantType = "client_credentials"
     let protectionSpace = URLProtectionSpace(host: "https://tlt.api.twitter.com/oauth2/token", port: 0, protocol: "https", realm: "Restricted", authenticationMethod: NSURLAuthenticationMethodHTTPBasic)
     var credential: URLCredential?
